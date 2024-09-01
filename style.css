@@ -26,8 +26,7 @@ html{
 }
 
 .info-message img{
-    width: 40%;
-    height: auto;
+    height: 30dvh;
 }
 
 .tags{
@@ -37,6 +36,18 @@ html{
     align-content: space-around;
     justify-content: space-around;
     align-items: baseline;
+}
+
+@media screen and (max-width:400px){
+    .info-message img{
+        height: 10dvh;
+    }
+
+    .tags{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: stretch;
+    }
 }
 
 .tag{
